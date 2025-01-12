@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body style="background-color: coral; color: darkblue; 
+    font-family: Georgia, 'Times New Roman', Times, serif;font-style: italic;">
+        <center>
+            <h2>CONTRASTING TWO BEST FRIENDS</h2>
+            <h4>Happiness and Daniella 🥰</h4>
+            <p>Let's see what makes these two bestfriends unique</p>
+
+            <p id="student1"></p>
+            <p id="student2"></p>
+
+            <script>
+           //creating a class
+           class student {
+                constructor (name, year, grade, hobby, nativity) {
+                   this.name=name;
+                   this.year=year;
+                   this.grade=grade;
+                   this.hobby=hobby;
+                   this.nativity=nativity
+                }
+                //creating age method for class student
+                age() {
+                    let date = new Date();
+                    return date.getFullYear()- this.year;
+                }
+            }
+               //use student class with two objects
+               student1= new student("Daniella", 2011, 9, );
+                document.getElementById("student1").innerHTML=
+                "My name is " + student1.name + ", I was born in " + student1.year + ", I am "
+                + student1.age() + " years old"+ " and I am in grade. " + student1.grade; 
+
+               student2= new student("Happiness", 2010, 9, );
+                document.getElementById("student2").innerHTML=
+                "My name is " + student2.name + ", I was born in " + student2.year + ", I am "
+                + student2.age() + " years old"+ " and I am in grade. " + student2.grade; 
+            </script>
+        </center>
+    </body>
+</html>  
